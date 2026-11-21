@@ -114,7 +114,7 @@ The project is being developed in the following phases:
 - [x] Phase 3: Automated Exploratory Data Analysis.
 - [x] Phase 4: Interactive data visualization.
 - [x] Phase 5: Google Gemini API integration.
-- [ ] Phase 6: Natural-language data analysis assistant.
+- [x] Phase 6: Natural-language data analysis assistant.
 - [ ] Phase 7: Agentic AI and automated analytical workflows.
 - [ ] Phase 8: Report generation and export.
 - [ ] Phase 9: Testing, documentation, and deployment.

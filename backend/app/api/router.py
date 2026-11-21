@@ -31,3 +31,7 @@ api_router.include_router(viz_routes.router)
 from app.api.routes import ai as ai_routes
 api_router.include_router(ai_routes.router)
 
+# Phase 6 — Natural-Language Data Assistant
+from app.api.routes import assistant as assistant_routes
+api_router.include_router(assistant_routes.router)
+
