@@ -39,3 +39,7 @@ api_router.include_router(assistant_routes.router)
 from app.api.routes import agent as agent_routes
 api_router.include_router(agent_routes.router)
 
+# Phase 8 — Report Generation & Export
+from app.api.routes import report as report_routes
+api_router.include_router(report_routes.router)
+
