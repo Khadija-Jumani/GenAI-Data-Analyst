@@ -35,3 +35,7 @@ api_router.include_router(ai_routes.router)
 from app.api.routes import assistant as assistant_routes
 api_router.include_router(assistant_routes.router)
 
+# Phase 7 — Agentic AI & Automated Workflows
+from app.api.routes import agent as agent_routes
+api_router.include_router(agent_routes.router)
+
