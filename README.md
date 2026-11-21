@@ -109,8 +109,8 @@ The application follows a modular full-stack architecture.
 
 The project is being developed in the following phases:
 
-- [ ] Phase 1: Project setup and architecture.
-- [ ] Phase 2: Dataset upload and preprocessing.
+- [x] Phase 1: Project setup and architecture.
+- [x] Phase 2: Dataset upload and preprocessing.
 - [ ] Phase 3: Automated Exploratory Data Analysis.
 - [ ] Phase 4: Interactive data visualization.
 - [ ] Phase 5: Google Gemini API integration.

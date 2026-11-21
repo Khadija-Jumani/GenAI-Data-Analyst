@@ -221,3 +221,58 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+# =============================================================
+# GenAI-Data-Analyst — Project-specific additions (Phase 1)
+# =============================================================
+
+# ----- Node.js / npm / pnpm -----
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# ----- Next.js -----
+.next/
+out/
+build/
+
+# ----- Frontend environment secrets -----
+frontend/.env.local
+frontend/.env.*.local
+
+# ----- General environment / secrets -----
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ----- Python virtual environments (explicit) -----
+.venv/
+venv/
+env/
+
+# ----- Python cache (explicit) -----
+__pycache__/
+*.py[cod]
+*.pyo
+
+# ----- Jupyter Notebook checkpoints -----
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# ----- Datasets (keep structure, ignore large data files) -----
+datasets/raw/
+datasets/*.csv
+datasets/*.xlsx
+datasets/*.json
+datasets/sample/*.csv
+datasets/sample/*.xlsx
+
+# ----- OS artefacts -----
+.DS_Store
+Thumbs.db
