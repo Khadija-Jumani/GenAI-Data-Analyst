@@ -67,6 +67,7 @@ class Settings(BaseSettings):
     # Generative AI (Phase 5)
     # ------------------------------------------------------------------ #
     GEMINI_API_KEY: str = ""
+    GEMINI_MODEL: str = "gemini-1.5-flash"
 
 
 # Singleton — import this throughout the application

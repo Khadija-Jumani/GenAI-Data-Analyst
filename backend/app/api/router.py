@@ -27,7 +27,7 @@ api_router.include_router(eda_routes.router)
 from app.api.routes import visualization as viz_routes
 api_router.include_router(viz_routes.router)
 
-# Phase 5 — Generative AI (placeholder)
-# from app.api.routes import ai as ai_routes
-# api_router.include_router(ai_routes.router)
+# Phase 5 — Generative AI
+from app.api.routes import ai as ai_routes
+api_router.include_router(ai_routes.router)
 
