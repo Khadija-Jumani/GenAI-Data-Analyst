@@ -355,6 +355,24 @@ def get_summary(dataset_id: str) -> DatasetSummaryResponse:
     )
 
 
+def get_dataframe(dataset_id: str) -> tuple[pd.DataFrame, str]:
+    """
+    Retrieve the Pandas DataFrame and filename for an active dataset session.
+
+    Parameters
+    ----------
+    dataset_id : str
+
+    Returns
+    -------
+    tuple[pd.DataFrame, str]
+        (dataframe, original_filename)
+    """
+    entry = _get_entry(dataset_id)
+    df = _load_dataframe(entry["path"], entry["extension"])
+    return df, entry["filename"]
+
+
 # --------------------------------------------------------------------------- #
 # Internal                                                                     #
 # --------------------------------------------------------------------------- #

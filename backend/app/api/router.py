@@ -19,9 +19,9 @@ api_router = APIRouter()
 # Phase 2 — Dataset upload & preprocessing
 api_router.include_router(dataset_routes.router)
 
-# Phase 3 — EDA (placeholder, uncomment when implemented)
-# from app.api.routes import eda as eda_routes
-# api_router.include_router(eda_routes.router)
+# Phase 3 — Automated EDA
+from app.api.routes import eda as eda_routes
+api_router.include_router(eda_routes.router)
 
 # Phase 4 — Visualisation (placeholder)
 # from app.api.routes import visualisation as viz_routes
