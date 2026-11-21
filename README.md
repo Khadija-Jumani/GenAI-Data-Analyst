@@ -117,7 +117,7 @@ The project is being developed in the following phases:
 - [x] Phase 6: Natural-language data analysis assistant.
 - [x] Phase 7: Agentic AI and automated analytical workflows.
 - [x] Phase 8: Report generation and export.
-- [ ] Phase 9: Testing, documentation, and deployment.
+- [x] Phase 9: Testing, documentation, and deployment.
 
 ---
 
@@ -136,25 +136,65 @@ The initial experiments will explore:
 
 ---
 
-## Future Scope
+## Getting Started
 
-Future improvements may include:
+### 1. Prerequisites
+- **Python 3.11+** installed on your system.
+- **Git** for version control.
+- *(Optional)* **Docker & Docker Compose** for containerized execution.
 
-- Multi-agent data analysis architecture.
-- Retrieval-Augmented Generation (RAG).
-- Advanced anomaly detection.
-- Predictive Machine Learning models.
-- Automated data cleaning recommendations.
-- Support for multiple datasets and domains.
-- Cloud deployment and scalable data processing.
+### 2. Clone the Repository
+```bash
+git clone https://github.com/Khadija-Jumani/GenAI-Data-Analyst.git
+cd GenAI-Data-Analyst
+```
+
+### 3. Setup Virtual Environment & Install Dependencies
+```bash
+# Create virtual environment
+python -m venv .venv
+
+# Activate virtual environment
+# Windows (PowerShell):
+.venv\Scripts\Activate.ps1
+# macOS / Linux:
+source .venv/bin/activate
+
+# Install required dependencies
+pip install -r backend/requirements.txt
+```
+
+### 4. Configure Environment Variables
+```bash
+# Copy example configuration template
+cp .env.example .env      # macOS/Linux
+copy .env.example .env    # Windows
+```
+*Edit `.env` to supply your `GEMINI_API_KEY` from [Google AI Studio](https://aistudio.google.com/). If omitted, the platform automatically runs in intelligent mock heuristic mode.*
+
+### 5. Run the Backend API Server
+```bash
+cd backend
+uvicorn app.main:app --reload --port 8000
+```
+Visit the interactive Swagger UI at **[http://localhost:8000/docs](http://localhost:8000/docs)** or ReDoc at **[http://localhost:8000/redoc](http://localhost:8000/redoc)**.
+
+### 6. Run via Docker Compose (Optional)
+```bash
+docker-compose up --build -d
+```
+
+### 7. Run Unified Automated Test Suite
+```bash
+python backend/tests/run_all_tests.py
+```
 
 ---
 
-## Getting Started
+## Documentation
 
-The project is currently under development.
-
-Installation instructions, environment configuration, API documentation, and deployment guidelines will be added as the application components are implemented.
+- **[API Documentation](docs/API_DOCUMENTATION.md)**: Full REST API reference covering all 8 subsystems.
+- **[System Architecture](docs/ARCHITECTURE.md)**: Comprehensive design, data flow, and security documentation.
 
 ---
 
